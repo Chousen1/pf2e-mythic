@@ -5,7 +5,7 @@
     "description": "A community contributed game system for Pathfinder Second Edition",
     "version": "8.4.1.0",
     "license": "./LICENSE",
-    "manifest": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/system.json",
+    "manifest": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/system.pf2e.json",
     "download": "https://github.com/Chousen1/pf2e-mythic/releases/download/pf2e-8.4.1/system.zip",
     "changelog": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/CHANGELOG.md",
     "url": "https://github.com/Chousen1/pf2e-mythic",
