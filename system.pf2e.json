@@ -3,13 +3,13 @@
     "type": "system",
     "title": "Pathfinder Second Edition",
     "description": "A community contributed game system for Pathfinder Second Edition",
-    "version": "8.4.1",
+    "version": "8.4.1.0",
     "license": "./LICENSE",
-    "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/system.pf2e.json",
-    "download": "https://github.com/foundryvtt/pf2e/releases/download/pf2e-8.4.1/system.zip",
-    "changelog": "https://raw.githubusercontent.com/foundryvtt/pf2e/refs/heads/v14-dev/CHANGELOG.md",
-    "url": "https://github.com/foundryvtt/pf2e",
-    "bugs": "https://github.com/foundryvtt/pf2e/issues",
+    "manifest": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/system.json",
+    "download": "https://github.com/Chousen1/pf2e-mythic/releases/download/pf2e-8.4.1/system.zip",
+    "changelog": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/CHANGELOG.md",
+    "url": "https://github.com/Chousen1/pf2e-mythic",
+    "bugs": "https://github.com/Chousen1/pf2e-mythic/issues",
     "background": "systems/pf2e/assets/system-banners/03.webp",
     "socket": true,
     "primaryTokenAttribute": "attributes.hp",
@@ -22,6 +22,11 @@
         {
             "name": "The PF2e System Developers",
             "url": "https://github.com/foundryvtt/pf2e",
+            "flags": {}
+        },
+        {
+            "name": "uvhJ",
+            "url": "https://github.com/Chousen1/pf2e-mythic",
             "flags": {}
         }
     ],
