@@ -270,7 +270,10 @@
                     "MythicHeader": "Mythic",
                     "MythicFeatPlaceholder": "Mythic Feat",
                     "MythicTier": "Tier",
-                    "SkillHeader": "Skill Feats"
+                    "SkillHeader": "Skill Feats",
+                    "DualClassHeader": "Dual Class Feats",
+                    "CustomMythicHeader": "Mythic Features",
+                    "GiftedSkillHeader": "Gifted Skill Feats"
                 },
                 "HandsOccupied": "Hands Occupied",
                 "Language": {
