@@ -166,7 +166,7 @@ class FeatSystemData extends ItemSystemModel<FeatPF2e, FeatSystemSchema> {
                             nullable: false,
                             integer: true,
                             min: 1,
-                            max: 4,
+                            max: 5,
                             initial: 1,
                         }),
                         attribute: new fields.StringField<AttributeString, AttributeString, true, true, true>({

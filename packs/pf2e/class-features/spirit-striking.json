@@ -74,6 +74,20 @@
                 ],
                 "slug": "spirit-striking",
                 "value": 4
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "item:proficiency:rank:5"
+                ],
+                "priority": 9,
+                "selectors": [
+                    "unarmed-damage",
+                    "weapon-damage"
+                ],
+                "slug": "spirit-striking",
+                "value": 5
             }
         ],
         "traits": {

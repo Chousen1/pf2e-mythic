@@ -99,7 +99,7 @@ interface PublicationData {
     remaster: boolean;
 }
 
-export const PROFICIENCY_RANKS = ["untrained", "trained", "expert", "master", "legendary"] as const;
+export const PROFICIENCY_RANKS = ["untrained", "trained", "expert", "master", "legendary", "mythic"] as const;
 
 export const MATH_FUNCTION_NAMES: Set<MathFunctionName> = new Set([
     "abs",
