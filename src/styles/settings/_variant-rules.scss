@@ -40,6 +40,9 @@
             &:nth-child(5) label:has(+ .form-fields input:not(:disabled)) {
                 background: var(--color-proficiency-legendary);
             }
+            &:nth-child(6) label:has(+ .form-fields input:not(:disabled)) {
+                background: var(--color-proficiency-mythic);
+            }
         }
     }
 }

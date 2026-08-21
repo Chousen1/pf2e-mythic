@@ -159,6 +159,7 @@ export const SetGamePF2e = {
                         game.settings.get(SYSTEM_ID, "proficiencyExpertModifier"),
                         game.settings.get(SYSTEM_ID, "proficiencyMasterModifier"),
                         game.settings.get(SYSTEM_ID, "proficiencyLegendaryModifier"),
+                        game.settings.get(SYSTEM_ID, "proficiencyMythicModifier"),
                     ],
                 },
                 stamina: game.settings.get(SYSTEM_ID, "staminaVariant"),

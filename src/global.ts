@@ -99,6 +99,7 @@ interface ClientSettingsPF2e extends fh.ClientSettings {
     get(scope: SystemId, setting: "proficiencyExpertModifier"): number;
     get(scope: SystemId, setting: "proficiencyMasterModifier"): number;
     get(scope: SystemId, setting: "proficiencyLegendaryModifier"): number;
+    get(scope: SystemId, setting: "proficiencyMythicModifier"): number;
 
     get(scope: SystemId, setting: "metagame_partyVision"): boolean;
     get(scope: SystemId, setting: "metagame_secretCondition"): boolean;
@@ -260,7 +261,7 @@ interface GamePF2e extends Game<
                 pwol: {
                     enabled: boolean;
                     /** Modifiers for each proficiency rank */
-                    modifiers: [number, number, number, number, number];
+                    modifiers: [number, number, number, number, number, number];
                 };
                 /** Stamina */
                 stamina: boolean;

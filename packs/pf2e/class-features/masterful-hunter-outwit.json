@@ -32,7 +32,8 @@
                     {
                         "or": [
                             "proficiency:master",
-                            "proficiency:legendary"
+                            "proficiency:legendary",
+                            "proficiency:mythic"
                         ]
                     }
                 ],

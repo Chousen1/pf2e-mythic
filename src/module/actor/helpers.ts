@@ -338,7 +338,7 @@ function getStrikeAttackDomains(
     ].flat();
 
     if (typeof proficiencyRank === "number") {
-        const proficiencies = ["untrained", "trained", "expert", "master", "legendary"] as const;
+        const proficiencies = ["untrained", "trained", "expert", "master", "legendary", "mythic"] as const;
         domains.push(`${proficiencies[proficiencyRank]}-attack`);
     }
 
@@ -406,7 +406,7 @@ function getAttackDamageDomains(
     }
 
     if (typeof proficiencyRank === "number") {
-        const proficiencies = ["untrained", "trained", "expert", "master", "legendary"] as const;
+        const proficiencies = ["untrained", "trained", "expert", "master", "legendary", "mythic"] as const;
         domains.push(`${proficiencies[proficiencyRank]}-damage`);
     }
 

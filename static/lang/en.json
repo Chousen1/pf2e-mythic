@@ -3635,6 +3635,7 @@
         "ProficiencyLevel2": "Expert",
         "ProficiencyLevel3": "Master",
         "ProficiencyLevel4": "Legendary",
+        "ProficiencyLevel5": "Mythic",
         "ProgressBar": {
             "LoadingComplete": "Loading complete",
             "LoadingPack": "Loading {pack}"
@@ -4133,6 +4134,7 @@
                         "Expert": "E",
                         "Legendary": "L",
                         "Master": "M",
+                        "Mythic": "X",
                         "Trained": "T",
                         "Untrained": "U"
                     }
