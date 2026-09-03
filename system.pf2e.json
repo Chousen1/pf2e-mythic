@@ -3,10 +3,10 @@
     "type": "system",
     "title": "Pathfinder Second Edition",
     "description": "A community contributed game system for Pathfinder Second Edition",
-    "version": "8.4.1.0",
+    "version": "8.5.0.0",
     "license": "./LICENSE",
     "manifest": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/system.pf2e.json",
-    "download": "https://github.com/Chousen1/pf2e-mythic/releases/download/pf2e-8.4.1/system.zip",
+    "download": "https://github.com/Chousen1/pf2e-mythic/releases/download/pf2e-8.5.0/system.zip",
     "changelog": "https://raw.githubusercontent.com/Chousen1/pf2e-mythic/refs/heads/mythic/CHANGELOG.md",
     "url": "https://github.com/Chousen1/pf2e-mythic",
     "bugs": "https://github.com/Chousen1/pf2e-mythic/issues",
@@ -15,7 +15,7 @@
     "primaryTokenAttribute": "attributes.hp",
     "compatibility": {
         "minimum": "14.361",
-        "verified": "14.366",
+        "verified": "14.367",
         "maximum": "14"
     },
     "authors": [
@@ -780,6 +780,19 @@
             "flags": {}
         },
         {
+            "name": "the-dead-gods-hand-bestiary",
+            "label": "The Dead God's Hand",
+            "path": "packs/the-dead-gods-hand-bestiary",
+            "type": "Actor",
+            "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "LIMITED",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
             "name": "the-enmity-cycle-bestiary",
             "label": "The Enmity Cycle",
             "path": "packs/the-enmity-cycle-bestiary",
@@ -1450,6 +1463,7 @@
                         "prey-for-death-bestiary",
                         "rusthenge-bestiary",
                         "shadows-at-sundown-bestiary",
+                        "the-dead-gods-hand-bestiary",
                         "the-enmity-cycle-bestiary",
                         "the-slithering-bestiary",
                         "troubles-in-grayce-bestiary",
