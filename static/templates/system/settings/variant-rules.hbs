@@ -39,4 +39,8 @@
         {{formGroup subsetting.type value=subsetting.value rootId=../rootId classes="slim" localize=true
                     disabled=(not ../settings.proficiencyVariant.value)}}
     {{/with}}
+    {{#with settings.proficiencyMythicModifier as |subsetting|}}
+        {{formGroup subsetting.type value=subsetting.value rootId=../rootId classes="slim" localize=true
+                    disabled=(not ../settings.proficiencyVariant.value)}}
+    {{/with}}
 {{~/inline~}}

@@ -164,6 +164,18 @@ export class VariantRulesSettings extends fa.api.HandlebarsApplicationMixin(fa.a
                 game.pf2e.settings.variants.pwol.modifiers[4] = Number(value) || 0;
             },
         },
+        proficiencyMythicModifier: {
+            type: new fields.NumberField({
+                label: "PF2E.SETTINGS.Variant.Proficiency.Rank.Mythic",
+                required: true,
+                nullable: false,
+                integer: true,
+                initial: 10,
+            }),
+            onChange: (value) => {
+                game.pf2e.settings.variants.pwol.modifiers[5] = Number(value) || 0;
+            },
+        },
     };
 
     static register(): void {

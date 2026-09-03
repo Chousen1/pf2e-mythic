@@ -60,7 +60,7 @@ export class Migration857WeaponSpecializationRE extends MigrationBase {
                 {
                     key: "AdjustModifier",
                     mode: "upgrade",
-                    predicate: ["item:proficiency:rank:4"],
+                    predicate: [{"gte":["item:proficiency:rank",4]}],
                     priority: 0,
                     selector: "strike-damage",
                     slug: "weapon-specialization",

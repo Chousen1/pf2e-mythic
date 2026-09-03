@@ -40,7 +40,8 @@
                         "or": [
                             "proficiency:expert",
                             "proficiency:master",
-                            "proficiency:legendary"
+                            "proficiency:legendary",
+                            "proficiency:mythic"
                         ]
                     }
                 ],

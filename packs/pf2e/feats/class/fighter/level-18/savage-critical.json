@@ -33,7 +33,12 @@
                 "key": "AdjustDegreeOfSuccess",
                 "predicate": [
                     "check:roll:total:natural:19",
-                    "item:proficiency:rank:4"
+                    {
+                        "gte":[
+                            "item:proficiency:rank",
+                            4
+                        ]
+                    }
                 ],
                 "selector": "strike-attack-roll"
             }
