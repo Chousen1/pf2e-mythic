@@ -18,6 +18,7 @@ const PROFICIENCY_RANK_OPTION = [
     "proficiency:expert",
     "proficiency:master",
     "proficiency:legendary",
+    "proficiency:mythic"
 ] as const;
 
 function ensureProficiencyOption(options: Set<string>, rank: number): void {
@@ -396,13 +397,13 @@ function createProficiencyModifier({
     level,
     addLevel,
 }: CreateProficiencyModifierParams): Modifier {
-    rank = Math.clamp(rank, 0, 4) as ZeroToFour;
+    rank = Math.clamp(rank, 0, 5) as ZeroToFour;
     addLevel ??= rank > 0;
     const pwolVariant = game.pf2e.settings.variants.pwol.enabled;
 
-    const baseBonuses: [number, number, number, number, number] = pwolVariant
+    const baseBonuses: [number, number, number, number, number, number] = pwolVariant
         ? game.pf2e.settings.variants.pwol.modifiers
-        : [0, 2, 4, 6, 8];
+        : [0, 2, 4, 6, 8, 10];
 
     const addedLevel = addLevel && !pwolVariant ? (level ?? actor.level) : 0;
     const bonus = baseBonuses[rank] + addedLevel;

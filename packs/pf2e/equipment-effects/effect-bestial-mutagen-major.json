@@ -130,6 +130,17 @@
             },
             {
                 "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "item:proficiency:rank:5"
+                ],
+                "priority": 0,
+                "selector": "{item|id}-damage",
+                "slug": "weapon-specialization",
+                "value": 5
+            },
+            {
+                "key": "AdjustModifier",
                 "mode": "multiply",
                 "predicate": [
                     "feature:weapon-specialization",

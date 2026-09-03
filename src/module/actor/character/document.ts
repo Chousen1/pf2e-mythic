@@ -345,7 +345,7 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
 
         // Skills
         system.skills = R.mapToObj(R.entries(CONFIG.PF2E.skills), ([key, { attribute }]) => {
-            const rank = Math.clamp(this._source.system.skills[key]?.rank || 0, 0, 4) as ZeroToFour;
+            const rank = Math.clamp(this._source.system.skills[key]?.rank || 0, 0, 5) as ZeroToFour;
             return [key, { rank, attribute, armor: ["dex", "str"].includes(attribute) }];
         });
 
@@ -1778,7 +1778,7 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
             );
             for (const proficiency of linkedProficiencies) {
                 const category = proficiencies[proficiency.sameAs ?? ""];
-                const maxRankIndex = PROFICIENCY_RANKS.indexOf(proficiency.maxRank ?? "legendary");
+                const maxRankIndex = PROFICIENCY_RANKS.indexOf(proficiency.maxRank ?? "mythic");
                 proficiency.rank = Math.min(category?.rank ?? 0, maxRankIndex) as ZeroToFour;
             }
 

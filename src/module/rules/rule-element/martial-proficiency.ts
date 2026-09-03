@@ -41,7 +41,7 @@ class MartialProficiencyRuleElement extends RuleElement<MartialProficiencySchema
             maxRank: new fields.StringField({
                 required: false,
                 nullable: false,
-                choices: ["trained", "expert", "master", "legendary"],
+                choices: ["trained", "expert", "master", "legendary", "mythic"],
             }),
             value: new ResolvableValueField({ required: false, initial: undefined }),
             visible: new fields.BooleanField({ required: false, nullable: false, initial: true }),
@@ -51,7 +51,7 @@ class MartialProficiencyRuleElement extends RuleElement<MartialProficiencySchema
     override onApplyActiveEffects(): void {
         if (!this.test()) return;
 
-        const rank = Math.clamp(Number(this.resolveValue(this.value)) || 1, 1, 4) as OneToFour;
+        const rank = Math.clamp(Number(this.resolveValue(this.value)) || 1, 1, 5) as OneToFour;
         const key = this.kind === "attack" ? "attacks" : "defenses";
         this.actor.system.proficiencies[key][this.slug] = {
             definition: this.resolveInjectedProperties(this.definition),

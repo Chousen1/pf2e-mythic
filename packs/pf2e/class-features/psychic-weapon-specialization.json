@@ -73,6 +73,20 @@
                 "value": 4
             },
             {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "item:proficiency:rank:5"
+                ],
+                "priority": 0,
+                "selectors": [
+                    "unarmed-damage",
+                    "weapon-damage"
+                ],
+                "slug": "weapon-specialization",
+                "value": 5
+            },
+            {
                 "key": "RollOption",
                 "option": "feature:weapon-specialization"
             }

@@ -898,6 +898,7 @@ export const PF2ECONFIG = {
         "PF2E.ProficiencyLevel2", // expert
         "PF2E.ProficiencyLevel3", // master
         "PF2E.ProficiencyLevel4", // legendary
+        "PF2E.ProficiencyLevel5", // mythic
     ] as const,
 
     proficiencyRanks: {
@@ -906,6 +907,7 @@ export const PF2ECONFIG = {
         expert: "PF2E.ProficiencyLevel2",
         master: "PF2E.ProficiencyLevel3",
         legendary: "PF2E.ProficiencyLevel4",
+        mythic: "PF2E.ProficiencyLevel5",
     } as const,
 
     actorSizes: sizeTypes,

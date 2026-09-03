@@ -270,7 +270,10 @@
                     "MythicHeader": "Mythic",
                     "MythicFeatPlaceholder": "Mythic Feat",
                     "MythicTier": "Tier",
-                    "SkillHeader": "Skill Feats"
+                    "SkillHeader": "Skill Feats",
+                    "DualClassHeader": "Dual Class Feats",
+                    "CustomMythicHeader": "Mythic Features",
+                    "GiftedSkillHeader": "Gifted Skill Feats"
                 },
                 "HandsOccupied": "Hands Occupied",
                 "Language": {
@@ -3640,6 +3643,7 @@
         "ProficiencyLevel2": "Expert",
         "ProficiencyLevel3": "Master",
         "ProficiencyLevel4": "Legendary",
+        "ProficiencyLevel5": "Mythic",
         "ProgressBar": {
             "LoadingComplete": "Loading complete",
             "LoadingPack": "Loading {pack}"
@@ -4138,6 +4142,7 @@
                         "Expert": "E",
                         "Legendary": "L",
                         "Master": "M",
+                        "Mythic": "X",
                         "Trained": "T",
                         "Untrained": "U"
                     }

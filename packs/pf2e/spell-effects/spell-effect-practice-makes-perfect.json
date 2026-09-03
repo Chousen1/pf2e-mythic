@@ -27,7 +27,8 @@
                     {
                         "nor": [
                             "proficiency:master",
-                            "proficiency:legendary"
+                            "proficiency:legendary",
+                            "proficiency:mythic"
                         ]
                     }
                 ],
@@ -41,7 +42,8 @@
                     {
                         "or": [
                             "proficiency:master",
-                            "proficiency:legendary"
+                            "proficiency:legendary",
+                            "proficiency:mythic"
                         ]
                     }
                 ],
