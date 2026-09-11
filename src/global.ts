@@ -216,7 +216,7 @@ interface GamePF2e extends Game<
                     sections: FeatGroupData[];
                 };
                 languages: LanguageSettings;
-                mythic: "disabled" | "enabled" | "variant-tiers";
+                mythic: "disabled" | "enabled" | "variant-tiers" | "zennsa";
                 type: string | null;
             };
             critFumble: {
