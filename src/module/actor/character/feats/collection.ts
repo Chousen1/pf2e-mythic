@@ -58,13 +58,6 @@ class CharacterFeats<TActor extends CharacterPF2e> extends Collection<string, Fe
             },
             slots: classFeatSlots?.class ?? [],
         });
-        
-        this.createGroup({
-            id: "class2",
-            label: "PF2E.Actor.Character.FeatSlot.DualClassHeader",
-            supported: ["class"],
-            sorted: true
-        });
 
         const evenLevels = new Array(actor.level)
             .fill(0)
@@ -108,23 +101,23 @@ class CharacterFeats<TActor extends CharacterPF2e> extends Collection<string, Fe
             slots: classFeatSlots?.general ?? [],
         });
 
-        this.createGroup({
-            id: "mythicCustom",
-            label: "PF2E.Actor.Character.FeatSlot.CustomMythicHeader",
-            supported: ["ancestry", "bonus", "class", "general", "skill", "calling"],
-            sorted: true
-        });
-
-        this.createGroup({
-            id: "skillGifted",
-            label: "PF2E.Actor.Character.FeatSlot.GiftedSkillHeader",
-            supported: ["skill"],
-            sorted: true
-        });
-
         // Add mythic if enabled
         const mythicSetting = game.pf2e.settings.campaign.mythic;
-        if (mythicSetting !== "disabled") {
+        
+        if (mythicSetting === "zennsa") {
+            this.createGroup({
+                id: "mythicCustom",
+                label: "PF2E.Actor.Character.FeatSlot.CustomMythicHeader",
+                supported: ["ancestry", "bonus", "class", "general", "skill", "calling"],
+                sorted: true
+            });
+            this.createGroup({
+                id: "skillGifted",
+                label: "PF2E.Actor.Character.FeatSlot.GiftedSkillHeader",
+                supported: ["skill"],
+                sorted: true
+            });
+        } else if (mythicSetting !== "disabled") {
             this.createGroup({
                 id: "mythic",
                 label: "PF2E.Actor.Character.FeatSlot.MythicHeader",

@@ -363,6 +363,7 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
         const { resources } = this.system;
         const isMythic =
             game.pf2e.settings.campaign.mythic !== "disabled" &&
+            game.pf2e.settings.campaign.mythic !== "zennsa" &&
             this.itemTypes.feat.some((f) => f.category === "calling");
         resources.heroPoints.max = isMythic ? 0 : 3;
         resources.investiture = { value: 0, max: 10 };
