@@ -59,13 +59,6 @@ class CharacterFeats<TActor extends CharacterPF2e> extends Collection<string, Fe
             slots: classFeatSlots?.class ?? [],
         });
         
-        this.createGroup({
-            id: "class2",
-            label: "PF2E.Actor.Character.FeatSlot.DualClassHeader",
-            supported: ["class"],
-            sorted: true
-        });
-
         const evenLevels = new Array(actor.level)
             .fill(0)
             .map((_, idx) => idx + 1)
