@@ -4129,7 +4129,8 @@
                     "Choices": {
                         "disabled": "Disabled",
                         "enabled": "Enabled",
-                        "variant-tiers": "Alternate Mythic Progression"
+                        "variant-tiers": "Alternate Mythic Progression",
+                        "zennsa": "Zennsa's Alternate Mythic Rules"
                     }
                 },
                 "Name": "Variant Rules",

@@ -118,7 +118,7 @@ interface ClientSettingsPF2e extends fh.ClientSettings {
     get(scope: SystemId, setting: "campaignFeats"): boolean;
     get(scope: SystemId, setting: "campaignFeatSections"): FeatGroupData[];
     get(scope: SystemId, setting: "campaignType"): string;
-    get(scope: SystemId, setting: "mythic"): "disabled" | "enabled" | "variant-tiers";
+    get(scope: SystemId, setting: "mythic"): "disabled" | "enabled" | "variant-tiers" | "zennsa";
 
     get(scope: SystemId, setting: "activeParty"): string;
     get(scope: SystemId, setting: "activePartyFolderState"): boolean;

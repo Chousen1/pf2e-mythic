@@ -81,7 +81,7 @@ export class VariantRulesSettings extends fa.api.HandlebarsApplicationMixin(fa.a
                 required: true,
                 label: "PF2E.SETTINGS.Variant.Mythic.Name",
                 hint: "PF2E.SETTINGS.Variant.Mythic.Hint",
-                choices: R.mapToObj(["disabled", "enabled", "variant-tiers"], (key) => [
+                choices: R.mapToObj(["disabled", "enabled", "variant-tiers", "zennsa"], (key) => [
                     key,
                     `PF2E.SETTINGS.Variant.Mythic.Choices.${key}`,
                 ]),
