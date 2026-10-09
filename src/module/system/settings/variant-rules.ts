@@ -81,14 +81,14 @@ export class VariantRulesSettings extends fa.api.HandlebarsApplicationMixin(fa.a
                 required: true,
                 label: "PF2E.SETTINGS.Variant.Mythic.Name",
                 hint: "PF2E.SETTINGS.Variant.Mythic.Hint",
-                choices: R.mapToObj(["disabled", "enabled", "variant-tiers"], (key) => [
+                choices: R.mapToObj(["disabled", "enabled", "variant-tiers", "zennsa"], (key) => [
                     key,
                     `PF2E.SETTINGS.Variant.Mythic.Choices.${key}`,
                 ]),
                 initial: "disabled",
             }),
             onChange: (value) => {
-                const choices = ["disabled", "enabled", "variant-tiers"] as const;
+                const choices = ["disabled", "enabled", "variant-tiers", "zennsa"] as const;
                 game.pf2e.settings.campaign.mythic = tupleHasValue(choices, value) ? value : "disabled";
                 resetActors(game.actors.filter((a) => a.isOfType("character")));
             },
