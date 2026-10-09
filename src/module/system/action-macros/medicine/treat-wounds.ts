@@ -25,6 +25,7 @@ const BONUS_HEALING: Record<ProficiencyRank, number> = {
     expert: 10,
     master: 30,
     legendary: 50,
+    mythic: 80,
 };
 
 /** Override in-memory value of the risky surgery roll option RE */
@@ -81,6 +82,7 @@ async function promptForTreatWounds(actor: CreaturePF2e): Promise<SkillActionPro
             expert: localize("DC.Expert"),
             master: localize("DC.Master"),
             legendary: localize("DC.Legendary"),
+            mythic: localize("DC.Mythic"),
         },
         modifierLabel: localize("DC.Mod"),
         feats,

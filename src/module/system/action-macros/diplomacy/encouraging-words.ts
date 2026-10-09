@@ -22,6 +22,7 @@ const BONUS_STAMINA: Record<ProficiencyRank, number> = {
     expert: 5,
     master: 15,
     legendary: 25,
+    mythic: 40,
 };
 
 async function promptForEncouragingWords(): Promise<SkillActionPromptResult | null> {
@@ -35,6 +36,7 @@ async function promptForEncouragingWords(): Promise<SkillActionPromptResult | nu
             expert: localize("DC.Expert"),
             master: localize("DC.Master"),
             legendary: localize("DC.Legendary"),
+            mythic: localize("DC.Mythic"),
         },
         modifierLabel: localize("DC.Mod"),
     });
