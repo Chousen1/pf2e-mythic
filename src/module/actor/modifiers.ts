@@ -710,6 +710,8 @@ class DamageDicePF2e {
     predicate: Predicate;
     alterations: DamageAlteration[];
     hideIfDisabled: boolean;
+    /** The source from which these dice originate, if any */
+    source: string | null;
 
     constructor(params: DamageDiceParameters) {
         if (params.selector) {
@@ -744,6 +746,7 @@ class DamageDicePF2e {
         this.enabled = params.enabled ?? this.predicate.test([]);
         this.ignored = params.ignored ?? !this.enabled;
         this.hideIfDisabled = params.hideIfDisabled ?? false;
+        this.source = params.source ?? null;
     }
 
     /** The `dieSize` as a number (or null) */
